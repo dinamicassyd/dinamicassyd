@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://script.google.com">
-<link rel="preconnect" href="https://script.googleusercontent.com">
+    <link rel="preconnect" href="https://script.googleusercontent.com">
     <title>DINÁMICAS S&D</title>
     <style>
         body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #fafafa; }
@@ -15,11 +19,11 @@
     <script>
         // Forzamos el parámetro ?login=1 desde la base
         var scriptUrl = "https://script.google.com/macros/s/AKfycbxpFYV_iekf-L0XU3C8K8qx3ipc9B42Pp8LezXPWJzFLkf5plXvNPXEbFUb2jKvzbM/exec?login=1";
-        
-        // Si hay más parámetros en la URL (ej. ?dd=Elite-SA), los añadimos con "&"
+
+        // Si hay más parámetros en la URL (ej. ?dd=DD-SYD), los añadimos con "&"
         var params = window.location.search;
         if (params) {
-            scriptUrl += "&" + params.substring(1); 
+            scriptUrl += "&" + params.substring(1);
         }
         var iframe = document.createElement('iframe');
         iframe.src = scriptUrl;
